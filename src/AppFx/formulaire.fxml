@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane layoutX="-11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppFx.formulaireController">
+   <children>
+      <Pane layoutX="20.0" layoutY="6.0" prefHeight="59.0" prefWidth="587.0" style="-fx-background-color: rgb(185,208,188);" />
+      <Pane layoutX="20.0" layoutY="125.0" prefHeight="395.0" prefWidth="304.0" style="-fx-background-color: rgb(118,143,121);">
+         <children>
+            <Label layoutX="15.0" layoutY="45.0" text="Nom" textFill="#a1d2a7">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Nom" layoutX="88.0" layoutY="43.0" prefHeight="32.0" prefWidth="159.0" />
+            <TextField fx:id="Prenom" layoutX="88.0" layoutY="84.0" prefHeight="32.0" prefWidth="159.0" />
+            <RadioButton fx:id="Male" layoutX="88.0" layoutY="137.0" mnemonicParsing="false" text="Male" textFill="#a1d2a7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="Female" layoutX="177.0" layoutY="137.0" mnemonicParsing="false" text="Female" textFill="#a1d2a7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <TextField fx:id="Age" layoutX="88.0" layoutY="172.0" prefHeight="32.0" prefWidth="159.0" />
+            <Label layoutX="16.0" layoutY="135.0" text="Sexe" textFill="#a1d2a7">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="233.0" text="Poids" textFill="#a1d2a7">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="302.0" text="Taille" textFill="#a1d2a7">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="85.0" text="Prénom" textFill="#a1d2a7">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="177.0" text="Age" textFill="#a1d2a7">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Poids" layoutX="88.0" layoutY="229.0" prefHeight="32.0" prefWidth="159.0" />
+            <TextField fx:id="Taille" layoutX="88.0" layoutY="298.0" prefHeight="32.0" prefWidth="159.0" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="395.0" fitWidth="262.0" layoutX="340.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ilya-plakhuta-uH1uO-uyYqY-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="Env" layoutX="491.0" layoutY="557.0" mnemonicParsing="false" onAction="#envoyer" style="-fx-background-color: rgb(118,143,121); -fx-background-radius: 20;" stylesheets="@Style.css" text="Envoyer" textFill="#b9d0bc">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextArea layoutX="226.0" layoutY="6.0" prefHeight="90.0" prefWidth="176.0" promptText="Formulaire" scrollLeft="1000.0" style="-fx-background-color: rgb(185,208,188); -fx-font-style: rgb(185,208,188); -fx-control-inner-background: rgb(185,208,188);">
+         <font>
+            <Font name="Arial Nova Light Italic" size="29.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

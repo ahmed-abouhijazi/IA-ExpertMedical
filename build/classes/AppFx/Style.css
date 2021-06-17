@@ -1,0 +1,25 @@
+#Butt:hover{     
+  -fx-background-color:#a1d2a7;
+  -fx-border-color:white;
+  -fx-text-fill:white; 
+}
+#Env:hover{     
+  -fx-background-color:#a1d2a7;
+  -fx-border-color:white;
+  -fx-text-fill:white; 
+}
+#Ready:hover{
+   -fx-background-color:#a1d2a7;
+  -fx-border-color:white;
+  -fx-text-fill:white;
+}
+#oui:hover{
+   -fx-background-color:#a1d2a7;
+  -fx-border-color:white;
+  -fx-text-fill:white;
+}
+#non:hover{
+   -fx-background-color:#a1d2a7;
+  -fx-border-color:white;
+  -fx-text-fill:white;
+}
